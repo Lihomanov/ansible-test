@@ -1,0 +1,10 @@
+---
+- name: Создать файл 'new_file'
+  hosts: all
+
+  tasks:
+    - name: Создать файл 'new_file'
+      file:
+        path: /home/test/new_file 
+        state: touch
+
